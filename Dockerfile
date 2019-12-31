@@ -25,7 +25,6 @@ RUN \
     python-dev \
     python \
     git \
-  && easy_install pip \
   && pip install uwsgi \
   && pip install flask
 
