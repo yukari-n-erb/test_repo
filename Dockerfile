@@ -18,7 +18,7 @@ MAINTAINER blacktop, https://github.com/blacktop
 
 RUN \
   apt-get update && apt-get install -y --no-install-recommends \
-    python-software-properties \
+    python-software-common \
     python-setuptools \
     build-essential \
     supervisor \
