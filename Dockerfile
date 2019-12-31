@@ -24,9 +24,12 @@ RUN \
     supervisor \
     python-dev \
     python \
-    git \
-  && pip install uwsgi \
-  && pip install flask
+    git
+RUN apt-get install python-pip
+RUN pip install --upgrade pip
+RUN pip install -r ./requirements.txt
+RUN pip install uwsgi 
+RUN pip install flask
 
 # install our code
 ADD . /home/docker/code/
