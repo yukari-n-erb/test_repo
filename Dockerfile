@@ -34,13 +34,13 @@ RUN pip install flask
 ADD . /home/docker/code/
 
 # Configure Nginx
-RUN rm /etc/nginx/sites-enabled/default
-RUN ln -s /home/docker/code/nginx-app.conf /etc/nginx/sites-enabled/
-RUN ln -s /home/docker/code/supervisor-app.conf /etc/supervisor/conf.d/
+# RUN rm /etc/nginx/sites-enabled/default
+# RUN ln -s /home/docker/code/nginx-app.conf /etc/nginx/sites-enabled/
+# RUN ln -s /home/docker/code/supervisor-app.conf /etc/supervisor/conf.d/
 
 # run pip install
-RUN pip install -r /home/docker/code/app/requirements.txt
+# RUN pip install -r /home/docker/code/app/requirements.txt
 
-EXPOSE 80 443
+# EXPOSE 80 443
 
-CMD ["/usr/bin/supervisord"]
+# CMD ["/usr/bin/supervisord"]
