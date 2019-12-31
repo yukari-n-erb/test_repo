@@ -27,8 +27,7 @@ RUN \
     git \
   easy_install pip \
   pip install uwsgi \
-  pip install flask \
-  mkdir /var/log/supervisor
+  pip install flask
 
 # install our code
 ADD . /home/docker/code/
