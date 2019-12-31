@@ -25,9 +25,9 @@ RUN \
     python-dev \
     python \
     git \
-  easy_install pip \
-  pip install uwsgi \
-  pip install flask
+  && easy_install pip \
+  && pip install uwsgi \
+  && pip install flask
 
 # install our code
 ADD . /home/docker/code/
