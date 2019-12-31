@@ -25,7 +25,7 @@ RUN \
     python-dev \
     python \
     git
-RUN apt-get install python-pip
+RUN apt-get install -y python-pip
 RUN pip install --upgrade pip
 RUN pip install -r ./requirements.txt
 RUN pip install uwsgi 
