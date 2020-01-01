@@ -41,6 +41,6 @@ ADD . /home/docker/code/
 # run pip install
 # RUN pip install -r /home/docker/code/app/requirements.txt
 
-# EXPOSE 80 443
+EXPOSE 80 443
 
-# CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord"]
